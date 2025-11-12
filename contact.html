@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <script src="validation.js" defer></script>
+</head>
+<body>
+     <header> <a href="homepage.html" class="logo">
+                <img src="logos.PNG"alt="BCD company logo">
+    </a>
+        <nav>
+            <ul>
+                <li><a href="homepage.html"> Home</a></li>
+                <li><a href="services.html"> Services</a></li>
+                <li><a href="portfolio.html"> Portfolio</a></li>
+                <li><a href="about.html"> About</a></li>
+                <li><a href="blog.html"> Blog</a></li>  
+            </ul>
+        </nav>
+    </header>
+    
+    <main class="contact-page-main">
+        <section class="contact-form-section">
+           
+            <div class="contact-header">
+                <h1>Let's Create Something Amazing</h1>
+                <p>Have a project in mind? We'd love to hear about it. Fill out the form below or email us directly.</p>
+            </div>
+
+
+            <form class="contact-form">
+                <div class="form-row">
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    <input type="tel" id="phone" name="phone" placeholder="Your Phone Number eg.0712345678" required maxlength="10" pattern="[0-9]" tittle="please enter exactly 10 digits">
+                </div>
+                <textarea id="project-details" name="project-details" placeholder="Tell us about your project..." rows="8" required></textarea>
+                <button type="submit" class="submit-button">Start Your Project</button>
+            </form>
+            <div class="contact-info">
+                <p><strong style="font-weight: normal;">📞 Call Us:</strong> <a href="tel:+254741853513">(+254) 741-853-513</a> </p>
+                <p><strong style="font-weight: normal;">📧 Email Us:</strong> <a href="mailto:businesscollaterals1@gmail.com">businesscollaterals1@gmail.com</a></p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
