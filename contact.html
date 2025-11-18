@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <script src="server.js" defer></script>
+</head>
+<body>
+     <header> <a href="index.html" class="logo">
+                <img src="logos.PNG"alt="BCD company logo">
+    </a>
+        <nav>
+            <ul>
+                <li><a href="index.html"> Home</a></li>
+                <li><a href="services.html"> Services</a></li>
+                <li><a href="portfolio.html"> Portfolio</a></li>
+                <li><a href="about.html"> About</a></li>
+                <li><a href="blog.html"> Blog</a></li>  
+            </ul>
+        </nav>
+    </header>
+    
+    <main class="contact-page-main">
+        <section class="contact-form-section">
+           
+            <div class="contact-header">
+                <h1>Let's Create Something Amazing</h1>
+                <p>Have a project in mind? We'd love to hear about it. Fill out the form below or email us directly.</p>
+            </div>
+
+<!-- FormSubmit Action for Email Submission -->
+            <form class="contact-form" action="https://formsubmit.co/businesscollaterals1@gmail.com" method="POST">
+                <div class="form-row">
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    <input type="tel" id="phone" name="phone" placeholder="Your Phone Number eg.0712345678" required maxlength="10" pattern="[0-9]{10}" tittle="please enter  10 digits">
+                </div>
+                <textarea id="project-details" name="project-details" placeholder="Tell us about your project..." rows="8" required></textarea>
+                <button type="submit" class="submit-button">Start Your Project</button>
+            </form>
+            <div class="contact-info">
+                <p><strong style="font-weight: normal;">📞 Call Us:</strong> <a href="tel:+254741853513">(+254) 741-853-513</a> </p>
+                <p><strong style="font-weight: normal;">📧 Email Us:</strong> <a href="mailto:businesscollaterals1@gmail.com">businesscollaterals1@gmail.com</a></p>
+            </div>
+        </section>
+    </main>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const phoneInput = document.getElementById('phone');
+            const contactForm = document.querySelector('.contact-form');
+
+            if (contactForm && phoneInput) {
+                contactForm.addEventListener('submit', function (event) {
+                    
+                    // Simple regex test: checks if the value consists of exactly 10 digits
+                    const phonePattern = /^\d{10}$/;
+                    
+                    if (!phonePattern.test(phoneInput.value)) {
+                        
+                        // Prevent the form from submitting if validation fails
+                        event.preventDefault(); 
+                        
+                        // Display the custom error message
+                        alert('Error: The phone number must contain exactly 10 digits.');
+                        
+                        // Give focus back to the input
+                        phoneInput.focus();
+                    }
+                });
+            }
+        });
+    </script>
+    <!-- FOOTER START - Copied from index.html to maintain consistency -->
+    <footer>
+         <div class="footer-links">
+            <a href="privacy.html">Privacy Policy</a>
+            <span class="link-separator">|</span>
+            <a href="terms.html">Terms of Service</a>
+        </div>
+        <p>&copy; <span id="currentYearFooter"></span> Business Collaterals Design.</p>
+       
+    </footer>
+    
+    <script>
+        // Update year in footer
+        document.getElementById('currentYearFooter').textContent = new Date().getFullYear();
+        
+        // This is necessary because fixed headers require main content to be pushed down
+        const headerHeight = document.querySelector('header').offsetHeight;
+        document.querySelector('.legal-page-main').style.paddingTop = `${headerHeight + 20}px`;
+    </script>
+    <!-- FOOTER END -->
+</body>
+</html>
+
+

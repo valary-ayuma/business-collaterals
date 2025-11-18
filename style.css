@@ -1,0 +1,1002 @@
+/* Basic Reset & Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+/* Header/Navigation Bar Styling */
+header {
+    background-color: #ffffff;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+/* Main Navigation Links (Services, Portfolio, About, Blog) */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    margin-left: 30px;
+}
+
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+}
+
+/* NAVIGATION LINK HOVER: Royal Blue */
+nav ul li a:hover {
+    color: #4169E1; 
+}
+
+/* Contact Button Styling */
+nav ul li.contact-button a {
+    /* CONTACT BUTTON BACKGROUND: Royal Blue */
+    background-color: #4169E1;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-left: 20px;
+}
+
+/* CONTACT BUTTON HOVER: Darker Royal Blue */
+nav ul li.contact-button a:hover {
+    background-color: #395AC8; 
+    transform: translateY(-1px);
+}
+
+
+/* RIGHT ICON HOVER: Royal Blue */
+.right-icon:hover {
+    color: #4169E1;
+}
+/* Logo Link Container Styling */
+.logo {
+    margin-right: auto; 
+    display: flex; 
+    align-items: center; 
+}
+
+/* STYLING FOR THE IMAGE INSIDE THE LOGO LINK */
+.logo img {
+    height: 100px; 
+    width: 120px;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+
+/* Hero Section Styling (Simplified) */
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding: 80px 40px; 
+    background-color: #fcfcfc;
+    gap: 40px; 
+    max-width: 1200px;
+    margin: 0 auto; 
+}
+
+.hero-content {
+    flex: 1;
+    max-width: 500px;
+    text-align: left;
+}
+
+.hero-content h1 {
+    font-family: 'Georgia', serif;
+    font-size: 3.5em;
+    line-height: 1.1;
+    color: #222;
+    margin-bottom: 20px;
+}
+
+/* Highlight Color: Bright Orange */
+.hero-content h1 .highlight {
+    color: #FF8C00; 
+}
+
+.hero-content p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+/* Call to Action Button */
+.btn-primary {
+    display: inline-block;
+    background-color: #4169E1; /* Royal Blue */
+    color: white;
+    padding: 15px 30px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+}
+
+.btn-primary:hover {
+    background-color: #395AC8; /* Darker Royal Blue on hover */
+}
+
+/* Image Container Styling (Simplified) */
+.hero-image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 300px;
+}
+
+/* --- PENTAGON STYLES START HERE (Unchanged) --- */
+.hero-image.pentagon-container {
+    width: 400px; 
+    height: 400px;
+    position: relative; 
+    background: none;
+    border-radius: 0; 
+    box-shadow: none; 
+    display: block; 
+}
+
+.pentagon-img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    border: 5px solid #fff;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.5s ease;
+}
+
+:root {
+    --distance-from-center: 180px;
+}
+
+.pentagon-img:nth-child(1) {
+    transform: translate(-50%, -50%) rotate(0deg) translateY(calc(-1 * var(--distance-from-center))) rotate(0deg);
+}
+.pentagon-img:nth-child(2) {
+    transform: translate(-50%, -50%) rotate(72deg) translateY(calc(-1 * var(--distance-from-center))) rotate(-72deg);
+}
+.pentagon-img:nth-child(3) {
+    transform: translate(-50%, -50%) rotate(144deg) translateY(calc(-1 * var(--distance-from-center))) rotate(-144deg);
+}
+.pentagon-img:nth-child(4) {
+    transform: translate(-50%, -50%) rotate(216deg) translateY(calc(-1 * var(--distance-from-center))) rotate(-216deg);
+}
+.pentagon-img:nth-child(5) {
+    transform: translate(-50%, -50%) rotate(288deg) translateY(calc(-1 * var(--distance-from-center))) rotate(-288deg);
+}
+
+.pentagon-img:hover {
+    transform: translate(-50%, -50%) scale(1.05);
+    z-index: 10;
+}
+/* --- PENTAGON STYLES END HERE --- */
+
+
+
+
+
+
+/* --- SERVICES SECTION STYLING (Unchanged Colors) --- */
+.services-section {
+    padding: 80px 40px;
+    background-color: #ffffff; 
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.services-header {
+    margin-bottom: 50px;
+}
+
+.services-header h2 {
+    font-family: 'Georgia', serif;
+    font-size: 2.5em;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+.services-header p {
+    font-size: 1.1em;
+    color: #555;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.services-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap; 
+}
+
+.service-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08); 
+    padding: 40px 30px;
+    flex: 1;
+    max-width: 320px;
+    min-width: 280px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.12); 
+}
+
+.icon-wrapper {
+    font-size: 2em;
+    color: #FF8C00; /* Bright Orange for icons */
+    margin-bottom: 25px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px; 
+    height: 60px;
+    border-radius: 50%; 
+    background-color: #fff0e6; /* Very light orange background */
+}
+
+.service-card h3 {
+    font-family: 'Georgia', serif;
+    font-size: 1.4em;
+    color: #222;
+    margin-bottom: 15px;
+}
+
+.service-card p {
+    font-size: 1em;
+    color: #666;
+    line-height: 1.6;
+}
+
+
+
+
+/* ------------------------------------------------------------------ */
+/* --- PORTFOLIO / SELECTED WORKS SECTION STYLES (UPDATED COLORS) --- */
+/* ------------------------------------------------------------------ */
+
+.portfolio-section {
+    padding: 80px 20px;
+    background-color: #f8f8f8;
+    text-align: center;
+}
+
+.portfolio-header {
+    max-width: 1200px;
+    margin: 0 auto 30px;
+}
+
+.portfolio-header h2 {
+    font-family: 'Georgia', serif; 
+    font-size: 2.5em;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.portfolio-header p {
+    color: #666;
+    margin-bottom: 30px;
+}
+
+/* Filter Buttons Styling */
+.filter-buttons {
+    margin-bottom: 40px;
+}
+
+.filter-button {
+    padding: 10px 20px;
+    margin: 0 5px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
+    border-radius: 4px;
+    text-transform: capitalize;
+    transition: background-color 0.3s, color 0.3s;
+    font-family: Arial, sans-serif;
+}
+
+.filter-button:hover {
+    background-color: #eee;
+}
+
+/* Active Button Color: Royal Blue */
+.filter-button.active {
+    background-color: #4169E1; 
+    border-color: #4169E1;
+    color: #fff;
+}
+
+/* Project Grid and Card Layout */
+.project-grid {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.project-card {
+    /* DEFAULT (LARGE SCREENS): Maintains the 3-column structure */
+    width: calc(33.333% - 14px); 
+    max-width: 380px; 
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-bottom: 20px; 
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+/* --- FIX FOR GRID REFLOW --- */
+.project-card.hidden {
+    /* Ensures hidden elements are completely removed from the layout flow. */
+    display: none !important;
+}
+
+.project-image {
+    overflow: hidden; 
+    display: block;
+    border-radius: 4px; 
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.project-image img {
+    width: 100%;
+    height: 250px; 
+    object-fit: cover; 
+    display: block;
+    transition: transform 0.3s ease; 
+}
+
+/* Optional Hover Effect */
+.project-card:hover .project-image img {
+    transform: scale(1.05);
+}
+
+.project-details {
+    padding-top: 10px;
+    color: #333;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+
+/* ------------------------------------------------------------------ */
+/* --- RESPONSIVE ADJUSTMENTS --- */
+/* ------------------------------------------------------------------ */
+
+@media (max-width: 768px) {
+    /* Hero section adjustments */
+    .hero-section { flex-direction: column; padding: 40px 20px; }
+    .hero-content { max-width: 100%; text-align: center; margin-bottom: 40px; }
+    .hero-content h1 { font-size: 2.5em; }
+    .hero-image.pentagon-container { width: 300px; height: 300px; }
+    :root { --distance-from-center: 120px; }
+    .pentagon-img { width: 100px; height: 100px; }
+    
+    /* Services section adjustments */
+    .services-cards { flex-direction: column; align-items: center; gap: 25px; }
+    .service-card { max-width: 400px; width: 90%; }
+    .services-section { padding: 60px 20px; }
+    .services-header h2 { font-size: 2em; }
+    .services-header p { font-size: 1.2em; }
+
+    /* Portfolio Section: 2 columns for tablets */
+    .project-grid { gap: 15px; }
+    .project-card { 
+        width: calc(50% - 10px); 
+        max-width: none; /* Allow it to use 50% width */
+    } 
+}
+
+@media (max-width: 480px) {
+    /* Nav adjustments */
+    header { padding: 10px 20px; }
+    /* You may want to hide the full navigation on small screens */
+    /* nav ul { display: none; } */
+    
+    /* Services section adjustments */
+    .services-section { padding: 40px 15px; }
+    .service-card { padding: 30px 20px; }
+    .icon-wrapper { font-size: 1.8em; width: 50px; height: 50px; }
+    .service-card h3 { font-size: 1.2em; }
+
+    /* Portfolio Section: 1 column for phones */
+    .project-card { 
+        width: 100%; 
+        max-width: none; 
+    }
+}
+
+
+
+
+
+/* ------------------------------------------------------------------ */
+/* --- BLOG PAGE STYLES (NEW) --- */
+/* ------------------------------------------------------------------ */
+
+/* Ensure the main content is pushed down past the fixed header */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    padding-top: 100px; 
+}
+
+.blog-header {
+    text-align: center;
+    margin-bottom: 60px;
+    padding: 20px 0;
+}
+
+.blog-header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.8em;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+.blog-header p {
+    font-size: 1.1em;
+    color: #666;
+}
+
+.blog-posts {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.post-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.post-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+}
+
+.post-image {
+    /* Set to the dark color from the image */
+    background-color:  #4169E1; 
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.8em;
+    font-weight: 700;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.post-content {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.post-content h3 {
+    font-weight: 700;
+    font-size: 1.4em;
+    color: #222;
+    margin-top: 0;
+    margin-bottom: 10px;
+    line-height: 1.3;
+}
+
+.post-content p {
+    font-size: 1em;
+    color: #333131;
+    margin-bottom: 0;
+}
+
+
+
+
+
+
+/* ------------------------------------------------------------------ */
+/* --- RESPONSIVE ADJUSTMENTS --- */
+/* ------------------------------------------------------------------ */
+
+@media (max-width: 768px) {
+    /* Hero section adjustments */
+    .hero-section { flex-direction: column; padding: 40px 20px; }
+    .hero-content { max-width: 100%; text-align: center; margin-bottom: 40px; }
+    .hero-content h1 { font-size: 2.5em; }
+    .hero-image.pentagon-container { width: 300px; height: 300px; }
+    :root { --distance-from-center: 120px; }
+    .pentagon-img { width: 100px; height: 100px; }
+    
+    /* Services section adjustments */
+    .services-cards { flex-direction: column; align-items: center; gap: 25px; }
+    .service-card { max-width: 400px; width: 90%; }
+    .services-section { padding: 60px 20px; }
+    .services-header h2 { font-size: 2em; }
+    .services-header p { font-size: 1.2em; }
+
+    /* Portfolio Section: 2 columns for tablets */
+    .project-grid { gap: 15px; }
+    .project-card { 
+        width: calc(50% - 10px); 
+        max-width: none;
+    } 
+    
+    /* Blog Layout Adjustments for small screens */
+    .container {
+        /* Adjusted to account for a slightly taller header on mobile */
+        padding-top: 150px;
+    }
+    .blog-posts {
+        flex-direction: column;
+        align-items: center;
+    }
+    .post-card {
+        width: 90%;
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Nav adjustments */
+    header { padding: 10px 20px; }
+    
+    /* Services section adjustments */
+    .services-section { padding: 40px 15px; }
+    .service-card { padding: 30px 20px; }
+    .icon-wrapper { font-size: 1.8em; width: 50px; height: 50px; }
+    .service-card h3 { font-size: 1.2em; }
+
+    /* Portfolio Section: 1 column for phones */
+    .project-card { 
+        width: 100%; 
+        max-width: none; 
+    }
+}
+
+
+
+
+
+
+/* ------------------------------------------------------------------ */
+/* --- ABOUT PAGE STYLES (Focus on Two-Column Layout and Circle) --- */
+/* ------------------------------------------------------------------ */
+
+.about-page-main {
+    /* Push content down past the fixed header */
+    padding-top: 100px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding-bottom: 80px;
+}
+
+.about-hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 40px;
+    gap: 40px;
+}
+
+/* --- Left Column: Text Content --- */
+.about-content {
+    flex: 1;
+    max-width: 50%;
+}
+
+.about-content h1 {
+    /* Style matching the image: Large, Bold, Blue, Serif-like font */
+    font-family: 'Playfair Display', serif; 
+    font-size: 3.5em;
+    color: #4169E1; /* Royal Blue */
+    margin-bottom: 25px;
+}
+
+.about-content p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.1em;
+    line-height: 1.7;
+    color: #444; 
+    margin-bottom: 20px;
+}
+
+/* --- Right Column: Circular Image --- */
+.about-image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 50%;
+}
+
+.circular-image-wrapper {
+    position: relative;
+    width: 450px; /* Size of the circle */
+    height: 450px;
+    border-radius: 50%; /* Key to the circular shape */
+    overflow: hidden;
+ border: 2px solid #8A2BE2; /* Very thin solid purple border */   
+}
+
+.about-image-circle {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.image-overlay-text {
+    /* Text overlay styling (Our Team) */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    font-family: 'Playfair Display', serif;
+    font-size: 3em;
+    font-weight: bold;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.7); 
+    pointer-events: none;
+}
+
+/* ------------------------------------------------------------------ */
+/* --- RESPONSIVE ADJUSTMENTS --- */
+/* ------------------------------------------------------------------ */
+
+@media (max-width: 1024px) {
+    .about-content h1 {
+        font-size: 3em;
+    }
+    .circular-image-wrapper {
+        width: 380px;
+        height: 380px;
+    }
+    .image-overlay-text {
+        font-size: 2.5em;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Switch to single column stack */
+    .about-hero-section { 
+        flex-direction: column; 
+        padding: 40px 20px;
+    }
+    .about-content {
+        max-width: 100%;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    .about-content h1 {
+        font-size: 2.5em;
+    }
+    
+    .about-image-container {
+        max-width: 100%;
+    }
+    .circular-image-wrapper {
+        width: 300px;
+        height: 300px;
+    }
+    .image-overlay-text {
+        font-size: 2em;
+    }
+}
+
+
+
+
+
+
+/* ------------------------------------------------------------------ */
+/* --- CONTACT PAGE STYLES --- */
+/* ------------------------------------------------------------------ */
+
+
+
+.contact-form-section {
+    max-width: 800px; /* Max width for the form container */
+    margin: 0 auto;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.contact-header {
+    margin-bottom: 40px;
+}
+
+.contact-header h1 {
+    /* Style matching the image: Large, bold, dark text (e.g., Georgia or Playfair Display) */
+    font-family: 'Georgia', serif; 
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.contact-header p {
+    font-size: 1.1em;
+    color: #0c0c0c;
+    line-height: 1.6;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Space between form elements */
+}
+
+.form-row {
+    display: flex;
+    gap: 20px; /* Space between name and email inputs */
+}
+
+.form-row input {
+    flex: 1; /* Makes name and email inputs take equal width */
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form input[type="tel"],
+.contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    background-color: #f8f8f8; /* Light gray background for inputs */
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    color: #333;
+    box-sizing: border-box; /* Include padding in width */
+}
+
+.contact-form textarea {
+    resize: vertical; /* Allow vertical resizing */
+}
+
+/* Placeholder text style */
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color:#494846;
+}
+
+.submit-button {
+    /* STYLING FOR "Start Your Project" BUTTON: Bright Orange */
+    background-color: #FF8C00; /* Bright Orange */
+    color: #ffffff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    align-self: center; /* Center the button in the form */
+    width: fit-content; /* Adjust width to content */
+    min-width: 200px; /* Minimum width for the button */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+}
+
+.submit-button:hover {
+    background-color: #e57e00; /* Darker orange on hover */
+    transform: translateY(-1px);
+}
+
+/* ------------------------------------------------------------------ */
+/* --- UPDATED CONTACT DETAILS STYLING --- */
+/* ------------------------------------------------------------------ */
+
+.contact-info {
+    margin-bottom: 20px;
+    padding: 15px 0;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    display: flex; 
+    justify-content: center;
+    gap: 40px;
+}
+
+.contact-info p {
+    margin: 0;
+    font-size: 1.1em;
+    color: #444;
+}
+
+/* NEW RULE: Style for the Phone and Email icon/text */
+.contact-info p strong {
+    color: #0d0d0e; /* Royal Blue */
+    font-weight: normal; /* Optional: Keep the icon from being overly bold */
+    margin-right: 5px; /* Adds a small space between the icon and the text */
+}
+
+.contact-info a {
+    color:  #395AC8; /* Use Royal Blue link color */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.2s;
+}
+
+.contact-info a:hover {
+    color: #395AC8; 
+    text-decoration: underline;
+}
+
+/* Responsive adjustment for contact info stacking */
+@media (max-width: 600px) {
+    .contact-info {
+        flex-direction: column; 
+        gap: 10px;
+    }
+}
+
+/* ------------------------------------------------------------------ */
+/* --- RESPONSIVE ADJUSTMENTS for Contact Page --- */
+/* ------------------------------------------------------------------ */
+
+@media (max-width: 768px) {
+    .contact-header h1 {
+        font-size: 2em;
+    }
+    .form-row {
+        flex-direction: column; /* Stack inputs vertically on small screens */
+        gap: 15px;
+    }
+    .contact-form-section {
+        padding: 40px 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .submit-button {
+        width: 100%; /* Full width button on very small screens */
+        min-width: unset;
+    }
+}
+
+
+
+/* --- 9. UNIVERSAL RESPONSIVENESS (Mobile First Adjustments) --- */
+
+/* Tablet & Smaller Desktop Adjustments (Screen < 1024px) */
+@media (max-width: 1024px) {
+    /* General */
+    .hero-section, .about-hero-section {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    /* Hero/About */
+    .hero-content h1, .about-content h1 { font-size: 3em; }
+    :root { --distance-from-center: 150px; }
+    .circular-image-wrapper { width: 400px; height: 400px; }
+    
+    /* Portfolio */
+    .project-card { 
+        width: calc(50% - 15px); /* Two columns for tablet */
+        max-width: none;
+    } 
+}
+
+
+/* Mobile/Tablet Adjustments (Screen < 768px) */
+@media (max-width: 768px) {
+    /* Header - Fixed header is complex on mobile, switch to static */
+    header { 
+        flex-direction: column; 
+        padding: 15px 5%;
+        position: static;
+        width: 100%;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+    nav { width: 100%; }
+    nav ul { flex-direction: column; gap: 10px; padding: 10px 0; }
+    nav ul li { margin-left: 0; }
+    nav ul li.contact-button a { margin-left: 0; width: 80%; display: block; text-align: center; }
+
+    /* Main Content Padding Reset */
+    .hero-section, .services-section, .portfolio-section, 
+    .blog-page-main, .about-page-main, .contact-page-main {
+        padding-top: 40px; /* Reduced since header is no longer fixed */
+        padding-bottom: 40px;
+    }
+
+    /* Hero/About Layout Stack */
+    .hero-section, .about-hero-section { flex-direction: column; text-align: center; gap: 40px; }
+    .hero-content, .about-content { max-width: 100%; }
+    .about-content h1 { text-align: center; }
+    .hero-image.pentagon-container, .circular-image-wrapper { width: 300px; height: 300px; }
+    .image-overlay-text { font-size: 2.2em; }
+    :root { --distance-from-center: 120px; }
+
+    /* Services Stack */
+    .services-cards { gap: 20px; }
+    .service-card { max-width: 90%; }
+    
+    /* Portfolio - Retains two columns, which works well on landscape tablets */
+    
+    /* Contact Form Stack */
+    .form-row {
+        flex-direction: column; /* Inputs stack vertically */
+        gap: 15px;
+    }
+    .contact-info {
+        flex-direction: column; /* Contact details stack */
+        gap: 15px;
+    }
+    .submit-button {
+        width: 100%;
+        min-width: unset;
+    }
+}
+
+
+/* Small Phone Adjustments (Screen < 480px) */
+@media (max-width: 480px) {
+    /* Header (already stacked) */
+    .logo img { height: 80px; width: 100px; }
+
+    /* General Typography */
+    .hero-content h1, .about-content h1 { font-size: 2.2em; }
+    .services-header h2, .portfolio-header h2, .contact-header h1 { font-size: 2em; }
+    
+    /* Portfolio - Single Column */
+    .project-card { 
+        width: 100%; 
+        max-width: none; 
+    }
+    
+    /* Blog - Single Column */
+    .post-card {
+        width: 100%;
+        max-width: 90%;
+    }
+}

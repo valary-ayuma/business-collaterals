@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Collateral Design (BCD) | Graphic Design & Brand Growth Agency </title>
+    <meta name="description" content="We design compelling business collaterals, brand identities, and high-converting web experiences that drive tangible results and elevate your brand's growth.">   
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+     <style>
+        /* Specific styling for the legal content area */
+        .legal-content {
+            max-width: 900px;
+            margin: 0 auto;
+            /* CRITICAL CHANGE: Removed top padding here. Only bottom padding remains. */
+            padding: 0 0 40px 0; 
+            line-height: 1.7;
+            color: var(--color-text);
+        }
+        .legal-content h1 {
+            text-align: center;
+            font-size: 3em;
+            /* CRITICAL CHANGE: Removed default top margin from H1 */
+            margin-top: 0; 
+            margin-bottom: 20px;
+            color: var(--color-primary);
+        }
+        .legal-content h2 {
+            font-size: 1.8em;
+            margin-top: 40px;
+            margin-bottom: 15px;
+            color: var(--color-dark);
+            border-bottom: 2px solid #eee;
+            padding-bottom: 5px;
+        }
+        .legal-content p, .legal-content ul, .legal-content ol {
+            margin-bottom: 20px;
+        }
+        .legal-content ul, .legal-content ol {
+            padding-left: 25px;
+        }
+    </style>
+</head>
+<body>
+    <header> <a href="index.html" class="logo">
+                <img src="logos.PNG"alt="BCD company logo">
+    </a>
+        <nav>
+            <ul>
+                <li><a href="index.html"> Home</a></li>
+                <li><a href="services.html"> Services</a></li>
+                <li><a href="portfolio.html"> Portfolio</a></li>
+                <li><a href="about.html"> About</a></li>
+                <li><a href="blog.html"> Blog</a></li>
+                <li class="contact-button"><a href="contact.html"> Contact</a></li>  
+            </ul>
+        </nav>
+    </header>
+    <main class="legal-page-main">
+        <div class="legal-content">
+            <h1>Privacy Policy</h1>
+            <p><strong>Last Updated: November 18, 2025</strong></p>
+
+            <p>Business Collateral Design is committed to protecting the privacy of those who visit our website and use our services. This Privacy Policy describes how we collect, use, and disclose your information when you use our website.</p>
+
+            <h2>1. Information We Collect</h2>
+            <p>We only collect information that you voluntarily provide to us via our contact form on the Service:</p>
+            <ul>
+                <li><strong>Personal Identification Information:</strong> Name, email address, and phone number.</li>
+                <li><strong>Project Details:</strong> Information you provide regarding your design needs or project requirements.</li>
+            </ul>
+
+            <h2>2. How We Use Your Information</h2>
+            <p>The information we collect is used solely for the following purposes:</p>
+            <ul>
+                <li>To respond to your inquiries and provide customer support.</li>
+                <li>To communicate with you about your project or potential services.</li>
+                <li>To improve our website and services based on user feedback.</li>
+            </ul>
+
+            <h2>3. Disclosure of Your Information</h2>
+            <p>We do not sell, trade, or otherwise transfer your personally identifiable information to outside parties. This does not include trusted third parties, such as our email service provider (FormSubmit.co, as used in the contact form), who assist us in operating our website, conducting our business, or serving our users, so long as those parties agree to keep this information confidential.</p>
+
+            <h2>4. Security of Data</h2>
+            <p>The security of your data is important to us. While we strive to use commercially acceptable means to protect your Personal Data, we cannot guarantee its absolute security.</p>
+
+            <h2>5. Contact Us</h2>
+            <p>If you have any questions about this Privacy Policy, please contact us:</p>
+            <p>Email: <a href="mailto:businesscollaterals1@gmail.com">businesscollaterals1@gmail.com</a><br></p>
+            <p>Contact: <a href="tel:+254741853513">(+254) 741-853-513</a></p>
+               
+           
+        </div>
+    </main>
+
+    <!-- FOOTER START - Copied from index.html to maintain consistency -->
+    <footer>
+         <div class="footer-links">
+            <a href="privacy.html">Privacy Policy</a>
+            <span class="link-separator">|</span>
+            <a href="terms.html">Terms of Service</a>
+        </div>
+        <p>&copy; <span id="currentYearFooter"></span> Business Collaterals Design.</p>
+       
+    </footer>
+    
+    <script>
+        // Update year in footer
+        document.getElementById('currentYearFooter').textContent = new Date().getFullYear();
+        
+        // This is necessary because fixed headers require main content to be pushed down
+        const headerHeight = document.querySelector('header').offsetHeight;
+        document.querySelector('.legal-page-main').style.paddingTop = `${headerHeight + 20}px`;
+    </script>
+    <!-- FOOTER END -->
+</body>
+</html>

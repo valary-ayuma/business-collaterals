@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Collateral Design (BCD) | Graphic Design & Brand Growth Agency </title>
+    <meta name="description" content="We design compelling business collaterals, brand identities, and high-converting web experiences that drive tangible results and elevate your brand's growth.">   
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <header> <a href="index.html" class="logo">
+                <img src="logos.PNG"alt="BCD company logo">
+    </a>
+        <nav>
+            <ul>
+                <li><a href="services.html"> Services</a></li>
+                <li><a href="portfolio.html"> Portfolio</a></li>
+                <li><a href="about.html"> About</a></li>
+                <li><a href="blog.html"> Blog</a></li>
+                <li class="contact-button"><a href="contact.html"> Contact</a></li>  
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1> We Design <br> Business <br> Collaterals That <br> Drive<span class="highlight"> Growth.</span> </h1>
+                <p> From compelling brand identities to high-converting web experiences, we craft designs that deliver tangible results and elevate your brand.</p>
+                <a href="portfolio.html" class="btn-primary"> View Work</a>
+            </div>
+            <div class="hero-image-container">
+                <div class="hero-image pentagon-container">
+                    <img src="picture1.PNG" alt="Professional branding portfolio example" class="pentagon-img">
+                    <img src="picture2.PNG" alt="High-converting website UI design snippet" class="pentagon-img">
+                    <img src="picture3.PNG" alt="Graphic design for marketing collateral" class="pentagon-img">
+                    <img src="picture4.PNG" alt="Modern logo design concept" class="pentagon-img">
+                    <img src="picture5.PNG" alt="Business card and stationery design" class="pentagon-img">
+                </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- FOOTER START - Copied from index.html to maintain consistency -->
+    <footer>
+         <div class="footer-links">
+            <a href="privacy.html">Privacy Policy</a>
+            <span class="link-separator">|</span>
+            <a href="terms.html">Terms of Service</a>
+        </div>
+        <p>&copy; <span id="currentYearFooter"></span> Business Collaterals Design.</p>
+       
+    </footer>
+    
+    <script>
+        // Update year in footer
+        document.getElementById('currentYearFooter').textContent = new Date().getFullYear();
+        
+        // This is necessary because fixed headers require main content to be pushed down
+        const headerHeight = document.querySelector('header').offsetHeight;
+        document.querySelector('.legal-page-main').style.paddingTop = `${headerHeight + 20}px`;
+    </script>
+    <!-- FOOTER END -->
+</body>
+</html>

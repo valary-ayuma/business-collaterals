@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header> 
+        <a href="index.html" class="logo">
+            <img src="logos.PNG" alt="BCD company logo">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="index.html"> Home</a></li>
+                <li><a href="services.html"> Services</a></li>
+                <li><a href="portfolio.html"> Portfolio</a></li>
+                <li><a href="blog.html"> Blog</a></li>
+                <li class="contact-button"><a href="contact.html"> Contact</a></li> 
+            </ul>
+        </nav>
+    </header>
+    
+    <main class="about-page-main">
+        <section class="about-hero-section">
+            
+            <div class="about-content">
+                <h1>About Us</h1>
+                <p>Business Collaterals Design is a creative agency with a passion for helping businesses succeed through strategic design. We believe that great design is not just about aesthetics, but about solving problems and achieving goals.</p>
+                <p>Our team of experienced designers, strategists, and thinkers collaborate closely with our clients to understand their vision and bring it to life with creative and precision</p>
+            </div>
+            
+            <div class="about-image-container">
+                <div class="circular-image-wrapper">
+                    <img src="about.jpg" alt="A team member working on dual monitors" class="about-image-circle">
+                    <h2 class="image-overlay-text">Our Team</h2>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- FOOTER START - Copied from index.html to maintain consistency -->
+    <footer>
+         <div class="footer-links">
+            <a href="privacy.html">Privacy Policy</a>
+            <span class="link-separator">|</span>
+            <a href="terms.html">Terms of Service</a>
+        </div>
+        <p>&copy; <span id="currentYearFooter"></span> Business Collaterals Design.</p>
+       
+    </footer>
+    
+    <script>
+        // Update year in footer
+        document.getElementById('currentYearFooter').textContent = new Date().getFullYear();
+        
+        // This is necessary because fixed headers require main content to be pushed down
+        const headerHeight = document.querySelector('header').offsetHeight;
+        document.querySelector('.legal-page-main').style.paddingTop = `${headerHeight + 20}px`;
+    </script>
+    <!-- FOOTER END -->
+</body>
+</html>

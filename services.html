@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header> <a href="index.html" class="logo">
+                <img src="logos.PNG"alt="BCD company logo">
+    </a>
+        <nav>
+            <ul>
+                <li><a href="index.html"> Home</a></li>
+                <li><a href="portfolio.html"> Portfolio</a></li>
+                <li><a href="about.html"> About</a></li>
+                <li><a href="blog.html"> Blog</a></li>
+                <li class="contact-button"><a href="contact.html"> Contact</a></li>  
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="services-section">
+            <div class="services header">
+                <h2> Our Core Services</h2>
+                <p> We provide a comprehesive suite of design services to meet your business needs.</p>
+            </div>
+            <div class="services-cards">
+                <div class="service-card">
+                    <div class="icon-wrapper">
+                        <i class="fa-solid fa-pen-nib"></i>
+                    </div>
+                    <h3> Branding and Identity Design</h3>
+                    <p>Crafting memorable logos, style guides, and complete brand systems that tell your unique story. </p>
+                </div>
+                <div class="service-card">
+                    <div class="icon-wrapper">
+                        <i class="fa-solid fa-laptop-code"></i>
+                    </div>
+                    <h3> UI/UX Design</h3>
+                    <p>Designing intuitive, user centric websites and applications that convert visistors into customers. </p>
+                </div>
+                <div class="service-card">
+                    <div class="icon-wrapper">
+                        <i class="fa-solid fa-print"></i>
+                    </div>
+                    <h3> Print Design & Digital Marketing</h3>
+                    <p>Creating stunning brochures, business cards, and marketing materials that make a lasting impression. </p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- FOOTER START - Copied from index.html to maintain consistency -->
+    <footer>
+         <div class="footer-links">
+            <a href="privacy.html">Privacy Policy</a>
+            <span class="link-separator">|</span>
+            <a href="terms.html">Terms of Service</a>
+        </div>
+        <p>&copy; <span id="currentYearFooter"></span> Business Collaterals Design.</p>
+       
+    </footer>
+    
+    <script>
+        // Update year in footer
+        document.getElementById('currentYearFooter').textContent = new Date().getFullYear();
+        
+        // This is necessary because fixed headers require main content to be pushed down
+        const headerHeight = document.querySelector('header').offsetHeight;
+        document.querySelector('.legal-page-main').style.paddingTop = `${headerHeight + 20}px`;
+    </script>
+    <!-- FOOTER END -->
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <header> <a href="index.html" class="logo">
+                <img src="logos.PNG"alt="BCD company logo">
+    </a>
+        <nav>
+            <ul>
+                <li><a href="index.html"> Home</a></li>
+                <li><a href="services.html"> Services</a></li>
+                <li><a href="about.html"> About</a></li>
+                <li><a href="blog.html"> Blog</a></li>
+                <li class="contact-button"><a href="contact.html"> Contact</a></li>  
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="portfolio-section">
+            <div class="portfolio-header">
+                <h1> Selected Works</h1>
+                <p> Explore a curated collection of our finest projects.</p>
+            </div>
+            <div class="filter-buttons">
+                <button class="filter-button active" data-filter="all">All</button>
+                <button class="filter-button" data-filter="branding">Branding</button>
+                <button class="filter-button" data-filter="UI/UX design">UI/UX Design</button>
+                <button class="filter-button" data-filter="print design">Print Design</button>
+                
+            </div>
+            <div class="project-card" data-category="branding">
+                <div class="project-image">
+                    <img src="banner2.PNG" alt="Banners">
+                </div>
+                <div class="project-details">
+                    Branding
+                </div>
+            </div>
+             <div class="project-card" data-category="branding">
+                <div class="project-image">
+                    <img src="bcard.PNG" alt="Business Cards">
+                </div>
+                <div class="project-details">
+                    Branding
+                </div>
+            </div>
+             <div class="project-card" data-category="print design">
+                <div class="project-image">
+                    <img src="bkits.PNG" alt="Business Kits">
+                </div>
+                <div class="project-details">
+                    Print Design
+                </div>
+            </div>
+             <div class="project-card" data-category="print design">
+                <div class="project-image">
+                    <img src="cards.PNG" alt="Cards">
+                </div>
+                <div class="project-details">
+                    Print Design
+                </div>
+            </div>
+             <div class="project-card" data-category="UI/UX design">
+                <div class="project-image">
+                    <img src="ux1.PNG" alt="UI/UX">
+                </div>
+                <div class="project-details">
+                    UI/UX Design
+                </div>
+            </div>
+             <div class="project-card" data-category="UI/UX design">
+                <div class="project-image">
+                    <img src="ux2.PNG" alt="UI/UX">
+                </div>
+                <div class="project-details">
+                    UI/UX Design
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+
+
+ <!-- FOOTER START - Copied from index.html to maintain consistency -->
+    <footer>
+         <div class="footer-links">
+            <a href="privacy.html">Privacy Policy</a>
+            <span class="link-separator">|</span>
+            <a href="terms.html">Terms of Service</a>
+        </div>
+        <p>&copy; <span id="currentYearFooter"></span> Business Collaterals Design.</p>
+       
+    </footer>
+    
+    <script>
+        // Update year in footer
+        document.getElementById('currentYearFooter').textContent = new Date().getFullYear();
+        
+        // This is necessary because fixed headers require main content to be pushed down
+        const headerHeight = document.querySelector('header').offsetHeight;
+        document.querySelector('.legal-page-main').style.paddingTop = `${headerHeight + 20}px`;
+    </script>
+    <!-- FOOTER END -->
+</body>
+</html>
