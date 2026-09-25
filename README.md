@@ -26,20 +26,7 @@ This site was delivered as a freelance engagement to give a design client a prof
 - **Contact** (`contact.html`)
 - **Privacy Policy** (`privacy.html`) and **Terms** (`terms.html`)
 
-## Project Structure
 
-business-collaterals/
-├── server.js # Node.js server
-├── script.js # front-end interactivity
-├── style.css
-├── index.html
-├── about.html
-├── services.html
-├── portfolio.html
-├── blog.html
-├── contact.html
-├── privacy.html
-└── (design asset images — business cards, brand kits, flyers, logos, UX mockups)
 
 
 ## Getting Started
